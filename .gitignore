@@ -1,0 +1,12 @@
+# Ignorar arquivos de ambiente virtual do Python
+/Backend/venv/
+
+# Ignorar arquivos de cache do Python
+/Backend/__pycache__/
+*.pyc
+
+# Ignorar o arquivo com as chaves secretas!
+/Backend/.env
+
+# Ignorar arquivos de cache do VS Code
+.vscode/

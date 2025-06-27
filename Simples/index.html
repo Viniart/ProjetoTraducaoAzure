@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tradutor Simples (Aula)</title>
+</head>
+<body>
+
+    <h1>Tradutor Simples com API da Azure</h1>
+
+    <p><b>Aviso:</b> Este é um exemplo de aula. Não use em produção com a chave de API exposta!</p>
+    <hr>
+
+    <h3>Texto Original</h3>
+    <textarea id="text-to-translate" cols="50" rows="8" placeholder="Digite algo aqui..."></textarea>
+    <br><br>
+
+    <label for="from-language">Traduzir de:</label>
+    <select id="from-language">
+        <option value="">Detectar Idioma Automaticamente</option>
+        <option value="en">Inglês</option>
+        <option value="pt">Português</option>
+        <option value="es">Espanhol</option>
+    </select>
+
+    <label for="to-language">Traduzir para:</label>
+    <select id="to-language">
+        <option value="pt">Português</option>
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <option value="fr">Francês</option>
+    </select>
+    <br><br>
+
+    <button id="translate-btn">Traduzir Agora</button>
+    <br><br>
+
+    <h3>Texto Traduzido</h3>
+    <textarea id="translated-text" cols="50" rows="8" readonly placeholder="A tradução aparecerá aqui..."></textarea>
+
+    <p id="status-message"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

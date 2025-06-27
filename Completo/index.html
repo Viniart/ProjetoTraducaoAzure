@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor com Azure AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="translator-container">
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Microsoft_Azure_logo.svg" alt="Azure Logo" class="azure-logo"> Tradutor com Azure AI</h1>
+        <p class="warning">Aviso: Este é um exemplo para desenvolvimento e não deve ser usado em produção.</p>
+
+        <div class="text-areas">
+            <div class="io-box">
+                <div class="language-selector-header">
+                    <label for="from-language">De:</label>
+                    <select id="from-language">
+                        <option value="">Detectar Idioma</option>
+                    </select>
+                </div>
+                <textarea id="text-to-translate" placeholder="Digite o texto para traduzir..."></textarea>
+            </div>
+            <div class="io-box">
+                <div class="language-selector-header">
+                    <label for="to-language">Para:</label>
+                    <select id="to-language"></select>
+                </div>
+                <textarea id="translated-text" placeholder="Tradução..." readonly></textarea>
+            </div>
+        </div>
+
+        <button id="translate-btn">Traduzir Texto</button>
+        <div id="status-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
